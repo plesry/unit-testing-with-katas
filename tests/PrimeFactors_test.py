@@ -33,6 +33,13 @@ class TestPrimeFactors(unittest.TestCase):
     def testNine(self):
         self.assertEquals(newList(3, 3), PrimeFactors.generate(9))
 
+    def testZero(self):
+        self.assertRaises(ValueError, PrimeFactors.generate, 0)
+
+    def testNegativeValue(self):
+        self.assertRaises(ValueError, PrimeFactors.generate, -1)
+
+
 
 if __name__ == '__main__':
     unittest.main()
