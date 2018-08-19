@@ -3,10 +3,10 @@ class PrimeFactors():
     @staticmethod
     def generate(num):
         primes = []
-        if num > 1:
-            while num % 2 == 0:
-                primes.append(2)
-                num = int(num / 2)
-            if num > 1:
-                primes.append(num)
+        candidate = 2
+        while num > 1:
+            while num % candidate == 0:
+                primes.append(candidate)
+                num = int(num / candidate)
+            candidate = candidate + 1
         return primes

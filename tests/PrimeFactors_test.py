@@ -30,6 +30,9 @@ class TestPrimeFactors(unittest.TestCase):
     def testEight(self):
         self.assertEquals(newList(2, 2, 2), PrimeFactors.generate(8))
 
+    def testNine(self):
+        self.assertEquals(newList(3, 3), PrimeFactors.generate(9))
+
 
 if __name__ == '__main__':
     unittest.main()
