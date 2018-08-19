@@ -1,5 +1,8 @@
-# 'Prime Factors' kata with unit testing
+# Practicing Test-Driven Development with katas
 
-This repository uses **nose** as the unit testing framework.
+I created this repository for practicing Test-Driven Development (TDD).
 
-See [Prime Factors kata](http://butunclebob.com/ArticleS.UncleBob.ThePrimeFactorsKata) for details.
+Use **nose** as the unit testing framework.
+
+## Katas
+* [Prime Factors kata](http://butunclebob.com/ArticleS.UncleBob.ThePrimeFactorsKata)

@@ -1,8 +1,7 @@
 {
     "python.unitTest.nosetestArgs": [
-        "--stop",
         "--where",
-        "tests/"
+        "tests"
     ],
     "python.unitTest.pyTestEnabled": false,
     "python.unitTest.unittestEnabled": false,
