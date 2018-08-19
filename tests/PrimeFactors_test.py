@@ -29,6 +29,18 @@ class TestPrimeFactors(unittest.TestCase):
                 newList(*primes), PrimeFactors.generate(num),
                 msg=f'Failed on {num}')
 
+    def testPowersOfTen(self):
+        def generatePrimesOfPowersOfTen(n):
+            primes = [2, 5]
+            for _ in range(n):
+                yield primes
+                primes = [2] + primes + [5]
+
+        powers_of_ten = [(10**i, primes) for i, primes in enumerate(generatePrimesOfPowersOfTen(8), start=1)]
+        for num, primes in powers_of_ten:
+            self.assertEqual(
+                newList(*primes), PrimeFactors.generate(num),
+                msg=f'Failed on {num}')
 
 if __name__ == '__main__':
     unittest.main()
