@@ -1,6 +1,7 @@
-# Practicing Test-Driven Development with katas
+# Practicing Unit Testing with Katas
 
-I created this repository for practicing Test-Driven Development (TDD).
+I created this repository for practicing unit testing, along with the concept of
+[Test-Driven Development (TDD)](https://en.wikipedia.org/wiki/Test-driven_development)
 
 Use **nose** as the unit testing framework.
 
