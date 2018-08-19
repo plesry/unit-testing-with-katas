@@ -42,5 +42,23 @@ class TestPrimeFactors(unittest.TestCase):
                 newList(*primes), PrimeFactors.generate(num),
                 msg=f'Failed on {num}')
 
+    def testTenPickedNumbers(self):
+        ten_picked_numbers = [
+            (101, [101]),
+            (231, [3, 7, 11]),
+            (403, [13, 31]),
+            (490, [2, 5, 7, 7]),
+            (588, [2, 2, 3, 7, 7]),
+            (654, [2, 3, 109]),
+            (711, [3, 3, 79]),
+            (883, [883]),
+            (960, [2, 2, 2, 2, 2, 2, 3, 5]),
+            (999, [3, 3, 3, 37])
+        ]
+        for num, primes in ten_picked_numbers:
+            self.assertEqual(
+                newList(*primes), PrimeFactors.generate(num),
+                msg=f'Failed on {num}')
+
 if __name__ == '__main__':
     unittest.main()
