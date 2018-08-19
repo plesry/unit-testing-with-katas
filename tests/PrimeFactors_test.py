@@ -21,6 +21,15 @@ class TestPrimeFactors(unittest.TestCase):
     def testFive(self):
         self.assertEquals(newList(5), PrimeFactors.generate(5))
 
+    def testSix(self):
+        self.assertEquals(newList(2, 3), PrimeFactors.generate(6))
+
+    def testSeven(self):
+        self.assertEquals(newList(7), PrimeFactors.generate(7))
+
+    def testEight(self):
+        self.assertEquals(newList(2, 2, 2), PrimeFactors.generate(8))
+
 
 if __name__ == '__main__':
     unittest.main()
