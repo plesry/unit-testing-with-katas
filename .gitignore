@@ -10,3 +10,6 @@ pip-delete-this-directory.txt
 # Unit test / coverage reports
 nosetests.xml
 .noseids
+
+# rope
+.ropeproject/
